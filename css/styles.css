@@ -2,6 +2,8 @@ body {
     color: #eee;
     font-family: "open sans", arial, sans-serif;
     text-align: center;
+    background-size: 200% 200%;
+    background-position: 0% 100%;
 }
 a {
     text-decoration: none;
@@ -20,16 +22,48 @@ section {
     text-align: center;
 }
 
-section#home {
-    background: linear-gradient(45deg, #00c0ff, #4218b8);
+.background-animate-down {
+    animation: gradient-down 0.5s ease;
 }
 
-section#works {
-    background: linear-gradient(45deg, #fec194, #ff0061);
+@keyframes gradient-down {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
 }
 
-section#bio {
-    background: linear-gradient(45deg, #00ffa9, #0d4dff);
+@keyframes zoomInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+        transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+}
+
+.background-animate-up {
+    animation: gradient-up 0.5s ease;
+}
+
+@keyframes gradient-up {
+    0% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
 }
 
 .bio {
@@ -152,17 +186,17 @@ a.project {
     border-bottom: 1px solid #ffffff70;
 }
 
-#contact-flap .links {
+.links {
     padding: 5px;
 }
 
-#contact-flap .links .icon {
+.links .icon {
     display: inline-block;
 }
 
-#contact-flap .links .icon svg {
-    height: 30px;
-    width: 30px;
+.links .icon svg {
+    height: 50px;
+    width: 50px;
     fill: #eee;
     padding: 10px 5px;
 }
@@ -198,21 +232,13 @@ a.project {
         font-size: 42px;
     }
 
-    #contact-flap {
-        top: inherit;
-        bottom: 5%;
-        max-width: 100px;
-    }
-
-    #contact-flap .title {
-        display: none;
-    }
-
-    #contact-flap .links {
+    .links {
         padding: 5px;
     }
 
-    #contact-flap .links .icon svg {
+    .links .icon svg {
         padding: 5px;
+        width: 40px;
+        height: 40px;
     }
 }
