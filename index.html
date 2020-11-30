@@ -24,8 +24,8 @@
     <meta name="theme-color" content="#ffffff">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:100,400,600,700&amp;subset=latin" rel="stylesheet">
     <link rel="stylesheet" href="vendor/fullpage.js/dist/fullpage.min.css">
+    <link rel="stylesheet" href="vendor/glider.js/glider.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    
 </head>
 
 <body>
@@ -56,48 +56,215 @@
         <section class="section" id="works">
             <h1>My Works</h1>
             <div class="works">
-                <a class="project" target="_blank"
-                    href="https://github.com/encryptorcode/process-handler/blob/master/README.md">
+                <a class="project" onclick="showProjectSlide('process-handler')">
                     <span class="project-name">
                         process-handler
                     </span>
                 </a>
-                <a class="project" target="_blank"
-                    href="https://github.com/encryptorcode/cliq-to/blob/master/README.md">
+                <a class="project" onclick="showProjectSlide('cliq-to')">
                     <span class="project-name">
                         cliq-to
                     </span>
                 </a>
-                <a class="project" target="_blank"
-                    href="https://github.com/encryptorcode/pluralize/blob/master/README.md">
+                <a class="project" onclick="showProjectSlide('pluralize')">
                     <span class="project-name">
                         pluralize
                     </span>
                 </a>
-                <a class="project" target="_blank"
-                    href="https://github.com/encryptorcode/spring-permissions/blob/master/README.md">
+                <a class="project" onclick="showProjectSlide('spring-permissions')">
                     <span class="project-name">
                         spring-permissions
                     </span>
                 </a>
-                <a class="project" target="_blank"
-                    href="https://github.com/encryptorcode/watch-agent/blob/master/README.md">
+                <a class="project" onclick="showProjectSlide('watch-agent')">
                     <span class="project-name">
                         watch-agent
                     </span>
                 </a>
-                <a class="project" target="_blank"
-                    href="https://github.com/encryptorcode/iam-oauth/blob/master/README.md">
+                <a class="project" onclick="showProjectSlide('iam-oauth')">
                     <span class="project-name">
                         iam-oauth
                     </span>
                 </a>
-                <a class="project" target="_blank"
-                    href="https://github.com/abhayjatindoshi/spendings-client/blob/master/README.md">
+                <a class="project" onclick="showProjectSlide('spendings')">
                     <span class="project-name">
                         spendings
                     </span>
                 </a>
+            </div>
+            <div class="freeze-layer"></div>
+            <div class="glider-contain">
+                <div class="glider">
+                    <div>
+                        <div class="project-details" id="project-process-handler">
+                            <div class="header">
+                                <span class="close" onclick="hideSlides()">&times;</span>
+                                <div class="project-name">process-handler</div>
+                                <ul class="tags">
+                                    <li>node.js</li>
+                                    <li>js</li>
+                                    <li>promise</li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div class="project-description">
+                                    This handler helps you to handle multiple promises effortlessly. This library will
+                                    handle processes and
+                                    its sub processes and its sub process and so on...
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <a href="https://github.com/encryptorcode/process-handler/blob/master/README.md"
+                                    target="_blank">Access docs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="project-details" id="project-cliq-to">
+                            <div class="header">
+                                <span class="close" onclick="hideSlides()">&times;</span>
+                                <div class="project-name">cliq-to</div>
+                                <ul class="tags">
+                                    <li>attachment</li>
+                                    <li>zoho</li>
+                                    <li>cliq</li>
+                                    <li>node.js</li>
+                                    <li>command-line</li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div class="project-description">
+                                    A gift for people who use command-line often to send cliq attachments quickly.
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <a href="https://github.com/encryptorcode/cliq-to/blob/master/README.md">Access docs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="project-details" id="project-pluralize">
+                            <div class="header">
+                                <span class="close" onclick="hideSlides()">&times;</span>
+                                <div class="project-name">pluralize</div>
+                                <ul class="tags">
+                                    <li>pluralize</li>
+                                    <li>nlp</li>
+                                    <li>plurals</li>
+                                    <li>java</li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div class="project-description">
+                                    Pluralize and singularize any word.
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <a href="https://github.com/encryptorcode/pluralize/blob/master/README.md"
+                                    target="_blank">Access docs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="project-details" id="project-spring-permissions">
+                            <div class="header">
+                                <span class="close" onclick="hideSlides()">&times;</span>
+                                <div class="project-name">spring-permissions</div>
+                                <ul class="tags">
+                                    <li>permissions</li>
+                                    <li>spring</li>
+                                    <li>validations</li>
+                                    <li>java</li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div class="project-description">
+                                    Move all your validations out of your business logic.
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <a href="https://github.com/encryptorcode/spring-permissions/blob/master/README.md"
+                                    target="_blank">Access docs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="project-details" id="project-watch-agent">
+                            <div class="header">
+                                <span class="close" onclick="hideSlides()">&times;</span>
+                                <div class="project-name">watch-agent</div>
+                                <ul class="tags">
+                                    <li>agent</li>
+                                    <li>monitoring</li>
+                                    <li>command</li>
+                                    <li>node.js</li>
+                                    <li>framework</li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div class="project-description">
+                                    A command line wrapper for monitoring, iterations and long processes
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <a href="https://github.com/encryptorcode/watch-agent/blob/master/README.md"
+                                    target="_blank">Access docs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="project-details" id="project-iam-oauth">
+                            <div class="header">
+                                <span class="close" onclick="hideSlides()">&times;</span>
+                                <div class="project-name">iam-oauth</div>
+                                <ul class="tags">
+                                    <li>oauth</li>
+                                    <li>login-system</li>
+                                    <li>security</li>
+                                    <li>login</li>
+                                    <li>coookies</li>
+                                    <li>authentication</li>
+                                    <li>java</li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div class="project-description">
+                                    The quickest way to support authentication on your app.
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <a href="https://github.com/encryptorcode/iam-oauth/blob/master/README.md"
+                                    target="_blank">Access docs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="project-details" id="project-spendings">
+                            <div class="header">
+                                <span class="close" onclick="hideSlides()">&times;</span>
+                                <div class="project-name">spendings</div>
+                                <ul class="tags">
+                                    <li>typescript</li>
+                                    <li>angular</li>
+                                    <li>php</li>
+                                    <li>js</li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div class="project-description">
+                                    This is a app that helps track expenses of a family
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <a href="https://github.com/abhayjatindoshi/spendings-client/blob/master/README.md"
+                                    target="_blank">Access docs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button aria-label="Previous" class="glider-prev">«</button>
+                <button aria-label="Next" class="glider-next">»</button>
             </div>
         </section>
         <section class="section" id="bio">
@@ -144,8 +311,33 @@
         </section>
     </div>
     <script src="vendor/fullpage.js/dist/fullpage.js"></script>
+    <script src="vendor/glider.js/glider.min.js"></script>
     <script>
-        var backgroundColors = ['#00c0ff', '#4218b8', '#ff0061', '#fec194', '#00ffa9', '#0d4dff'];
+        var glider = new Glider(document.querySelector('.glider'), {
+            slidesToShow: 1,
+            draggable: true,
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            }
+        })
+
+        function showProjectSlide(name) {
+            document.querySelector('.freeze-layer').style.display = 'block';
+            document.querySelector('.glider-contain').style.display = 'block';
+            let element = document.querySelector('#project-' + name);
+            var index = parseInt(element.parentElement.dataset.gslide);
+            glider.scrollItem(index);
+        }
+
+        function hideSlides() {
+            document.querySelector('.freeze-layer').style.display = 'none';
+            document.querySelector('.glider-contain').style.display = 'none';
+        }
+
+        hideSlides();
+
+        var backgroundColors = ['#00c0ff', '#4218b8', '#ff0061', '#ffbf0c', '#00ffa9', '#0d4dff'];
 
         function setBackground(index, position) {
             document.body.style.background = 'linear-gradient(45deg, '

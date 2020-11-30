@@ -40,7 +40,7 @@ section {
         opacity: 0;
         -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
         transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
-        -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        -webkit-animation-timing-function: cubic-bezier(0.55,0.055,0.675,0.19);
         animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
     }
 
@@ -241,4 +241,98 @@ a.project {
         width: 40px;
         height: 40px;
     }
+}
+
+.glider-contain {
+    width: 70%;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.glider-next,
+.glider-prev {
+    color: #eee;
+    top: 100px;
+}
+
+.glider-next.disabled,
+.glider-prev.disabled {
+    color: #aaa;
+}
+
+.freeze-layer {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: #00000099;
+    top: 0;
+}
+
+.project-details {
+    display: block;
+    width: 400px;
+    max-width: 95%;
+    margin: auto;
+}
+
+.project-details .close {
+    text-align: right;
+    position: absolute;
+    right: 15px;
+    top: 6px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.project-details .header {
+    background-color: #0000004b;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.project-details .project-name {
+    font-size: x-large;
+    padding-top: 20px;
+}
+
+.project-details .tags {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 0;
+}
+
+.project-details .tags li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px;
+    background: #a5a5a52b;
+    font-size: small;
+    border-radius: 20px;
+}
+
+.project-details .body {
+    background-color: #eee;
+    color: #333;
+    padding: 10px;
+}
+
+.project-details .footer {
+    background-color: #eee;
+    color: #222;
+    font-weight: 100;
+    padding: 15px;
+    border-top: 1px solid #bfbfbf;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+}
+
+.project-details .footer:hover {
+    background-color: #dcdcdc;
 }
